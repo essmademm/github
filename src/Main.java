@@ -170,10 +170,7 @@ public class Main {
 
         ArrayList<String> words = new ArrayList<>(Arrays.asList(
                 "infinitive", "insomnia", "array"));
-
-        for (int i = 0; i < words.size(); i++) {
-            words.set(i, words.get(i).replaceAll("[aeiou]", "*"));
-        }
+        words.replaceAll(s -> s.replaceAll("[aeiou]", "*"));
 
         System.out.println(words);
 
@@ -223,7 +220,7 @@ public class Main {
 
 
 
-/// ////////////////18. Find Second Largest String (by Length)
+/// ////////////////18. Find 2 Largest String (by Length)
 
         ArrayList<String> movie = new ArrayList<>(Arrays.asList(
                 "star", "mountains", "Masha", "Avatar"));
